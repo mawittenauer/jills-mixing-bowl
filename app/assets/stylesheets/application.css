@@ -13,3 +13,355 @@
  *= require_tree .
  *= require_self
  */
+
+/******************
+GENERAL
+******************/
+
+body {
+  background-image: url("../img/wood-texture.png");
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: 'Ultra';
+  text-align: center;
+  color: #35322E;
+}
+
+h3, h4 {
+  font-family: 'Ultra';
+  color: #35322E;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto 20px;
+  overflow: auto;
+  padding-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  background-color: #FF9955;
+  font-family: 'Slabo 13px';
+  padding: 10px 20px;
+  display: inline-block;
+  color: #35322E;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #777;
+  font-weight: bold;
+}
+
+#gmap_canvas img {
+  max-width:none!important;background:none!important
+}
+
+#model-background {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: fixed;
+}
+
+#model-background img {
+  display: block;
+  height: 80%;
+  margin: 50px auto 0;
+  border: 10px solid #F9EBD7;
+}
+
+/******************
+HEADER
+******************/
+
+#logo {
+  width: 120px;
+  display: block;
+  margin: 20px auto 0;
+}
+
+header {
+  background-color: #C6BBAB;
+  margin: 0 auto 30px;
+  width: 90%;
+  box-shadow: 1px 1px 1px #777;
+}
+
+#header {
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+#main-nav {
+  display: none;
+}
+
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#main-nav ul li a {
+  text-align: center;
+  display: inline-block;
+  padding: 10px 0;
+  border-top: 1px solid #000;
+  font-family: 'Slabo 13px';
+  color: #F8F9EE;
+  width: 100%;
+}
+
+#menu-toggle {
+  margin-left: 10px;
+  color: #35322E;
+  font-family: 'Ultra';
+}
+
+/******************
+FOOTER
+******************/
+
+.footer {
+  background-color: #F9EBD7;
+  width: 90%;
+  margin: 0 auto 20px;
+  box-shadow: 1px 1px 1px #777;
+  color: #35322E;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.footer h2 {
+  font-family: 'Ultra';
+  padding: 0;
+  margin: 0;
+  line-height: 200%;
+}
+
+.footer p {
+  text-align: center;
+  font-family: 'Slabo 13px';
+  margin: 0;
+  padding: 0;
+  line-height: 200%;
+}
+
+.social-icon {
+  width: 80px;
+}
+
+/******************
+PAGE: HOME
+******************/
+
+#hero_cake {
+  border: 10px solid #F9EBD7;
+  box-sizing: border-box;
+  display: none;
+  box-shadow: 1px 1px 1px #777;
+}
+
+#hero {
+  display: block;
+  background-color: #F9EBD7;
+  box-shadow: 1px 1px 1px #777;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+#hero h2 {
+  padding: 20px 20px 0;
+  margin: 0;
+  text-align: left;
+}
+
+#hero p {
+  padding: 20px;
+  margin: 0;
+  font-family: 'Slabo 13px';
+  line-height: 150%;
+  font-size: 18px;
+}
+
+#call_to_action {
+  text-align: center;
+}
+
+/******************
+PAGE: GALLERY
+******************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  list-style: none;
+  width: 45%;
+  margin: 0 2% 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#gallery li img {
+  border: 10px solid #F9EBD7;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px #777;
+}
+
+/******************
+PAGE: CONTACT
+******************/
+
+#contact-info {
+  margin-bottom: 10px;
+}
+
+#gmap_canvas {
+  border: 10px solid #F9EBD7;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/******************
+PAGE: ORDER
+******************/
+
+.order p {
+  font-family: 'Slabo 13px';
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.order h3, h4 {
+  text-align: center;
+}
+
+@media screen and (min-width: 680px) {
+  /******************
+  HEADER
+  ******************/
+  
+  #header {
+    padding: 0;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  #main-nav {
+    display: block !important;
+    overflow: auto;
+    text-align: center;
+  }
+  
+  #main-nav ul li {
+    display: inline-block;
+    width: 15%;
+  }
+  
+  #main-nav ul li a {
+    display: inline-block;
+    border: none;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  #main-nav ul li a#active {
+    background-color: #FF9955;
+    color: #35322E;
+  }
+  
+  /******************
+  PAGE: HOME
+  ******************/
+  
+  #hero_cake {
+    width: 30%;
+    float: left;
+    display: block;
+    margin-left: 0.5%;
+  }
+  
+  #hero {
+    float: left;
+    margin-left: 10px;
+    width: 67.8%;
+    box-sizing: border-box;
+  }
+  
+  /******************
+  PAGE: GALLERY
+  ******************/
+  
+  #gallery li {
+    width: 30%;
+    margin: 0 1.4% 20px;
+  }
+  
+  /******************
+  PAGE: CONTACT
+  ******************/
+  
+  #contact-info {
+    float: left;
+    margin-left: 10px;
+    width: 67.8%;
+    box-sizing: border-box; 
+  }
+  
+  #contact-info-secondary {
+    padding-left: 20px;
+  }
+  
+  
+  /******************
+  FOOTER
+  ******************/
+  
+  .footer {
+    width: 30%;
+    height: 120px;
+    margin: 0 1.66666667% 20px;
+    float: left;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  /******************
+  GENERAL
+  ******************/
+  
+  .container {
+    max-width: 1200px;
+  }
+  
+  /******************
+  PAGE: GALLERY
+  ******************/
+  
+  #gallery li {
+    width: 20%;
+    margin: 0 2.2% 20px;
+  }
+}
+

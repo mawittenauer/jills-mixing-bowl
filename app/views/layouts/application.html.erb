@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JillsMixingBowl</title>
+  <title>Jills Mixing Bowl</title>
+  <link href='https://fonts.googleapis.com/css?family=Ultra|Slabo+13px' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-<%= yield %>
-
+<%= render 'shared/header' %>
+<div class="container">
+  <%= yield %>
+</div>
+<%= render 'shared/footer' %>
 </body>
 </html>
