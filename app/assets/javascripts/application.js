@@ -33,3 +33,8 @@ function galleryModel() {
   });
 };
 
+$(document).ready(function() {
+  mobileMenuToggle();
+  galleryModel();
+});
+
