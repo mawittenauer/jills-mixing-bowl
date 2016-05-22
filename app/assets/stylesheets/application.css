@@ -18,6 +18,10 @@
 GENERAL
 ******************/
 
+form {
+  text-align: center;
+}
+
 body {
   background-image: url("../img/wood-texture.png");
 }
@@ -44,6 +48,10 @@ h3, h4 {
   padding-bottom: 10px;
 }
 
+label {
+  font-family: 'Slabo 13px';
+}
+
 img {
   max-width: 100%;
 }
@@ -58,6 +66,7 @@ img {
   border-radius: 10px;
   box-shadow: 1px 1px 1px #777;
   font-weight: bold;
+  border: none;
 }
 
 #gmap_canvas img {

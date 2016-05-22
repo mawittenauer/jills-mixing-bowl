@@ -10,6 +10,10 @@
       <li><%= link_to "Contact", contact_path, id: "#{"active" if yield(:page) == "contact" }" %></li>
       <li><%= link_to "Gallery", "#" %></li>
       <li><%= link_to "Order", order_path, id: "#{"active" if yield(:page) == "order" }" %></li>
+      
+      <% if logged_in? %>
+        <li><%= link_to "Sign Out", sign_out_path %></li>
+      <% end %>
     </ul>
   </nav>
 </header>

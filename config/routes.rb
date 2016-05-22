@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about'
   get '/contact', to: 'pages#contact'
   get '/order', to: 'pages#order'
+  get '/admin', to: 'sessions#new'
+  post '/sign_in', to: 'sessions#create'
+  get '/sign_out', to: 'sessions#destroy'
 end
