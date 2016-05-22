@@ -3,6 +3,9 @@
   <% @cakes.each do |cake| %>
     <li>
       <%= image_tag(cake.cake_url, class: "gallery-image") %>
+      <% if logged_in? %>
+        <%= link_to "Delete", cake_path(cake), method: :delete %>
+      <% end %>
     </li>
   <% end %>
 </ul>

@@ -1,5 +1,5 @@
 class CakesController < ApplicationController
-  before_action :require_user, only: [:new, :create]
+  before_action :require_user, only: [:new, :create, :destroy]
   
   def index
     @cakes = Cake.all
@@ -17,6 +17,12 @@ class CakesController < ApplicationController
     else
       render :new
     end
+  end
+  
+  def destroy
+    cake = Cake.find(params[:id])
+    cake.destroy
+    redirect_to gallery_path
   end
   
   private
