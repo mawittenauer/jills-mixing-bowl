@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/admin', to: 'sessions#new'
   post '/sign_in', to: 'sessions#create'
   get '/sign_out', to: 'sessions#destroy'
+  resources :cakes, only: [:create, :new]
 end
