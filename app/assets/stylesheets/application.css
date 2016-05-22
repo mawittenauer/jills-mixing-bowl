@@ -18,6 +18,10 @@
 GENERAL
 ******************/
 
+input {
+  -webkit-appearance: none;
+}
+
 form {
   text-align: center;
 }
