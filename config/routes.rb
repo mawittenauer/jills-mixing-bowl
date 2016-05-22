@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get '/about', to: 'pages#about'
   get '/contact', to: 'pages#contact'
+  get '/gallery', to: 'cakes#index'
   get '/order', to: 'pages#order'
   get '/admin', to: 'sessions#new'
   post '/sign_in', to: 'sessions#create'

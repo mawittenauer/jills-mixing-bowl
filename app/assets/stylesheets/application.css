@@ -22,6 +22,17 @@ form {
   text-align: center;
 }
 
+form input[type="text"],
+form input[type="password"],
+form input[type="file"] {
+  font-size: 20px;
+  font-family: 'Slabo 13px';
+}
+
+#new_cake input[type="file"] {
+  margin-left: 100px;
+}
+
 body {
   background-image: url("../img/wood-texture.png");
 }

@@ -8,7 +8,7 @@
       <li><%= link_to "Home", root_path, id: "#{"active" if yield(:page) == "home" }" %></li>
       <li><%= link_to "About", about_path, id: "#{"active" if yield(:page) == "about" }" %></li>
       <li><%= link_to "Contact", contact_path, id: "#{"active" if yield(:page) == "contact" }" %></li>
-      <li><%= link_to "Gallery", "#" %></li>
+      <li><%= link_to "Gallery", gallery_path, id: "#{"active" if yield(:page) == "gallery" }" %></li>
       <li><%= link_to "Order", order_path, id: "#{"active" if yield(:page) == "order" }" %></li>
       
       <% if logged_in? %>

@@ -1,5 +1,9 @@
 class CakesController < ApplicationController
-  before_action :require_user
+  before_action :require_user, only: [:new, :create]
+  
+  def index
+    @cakes = Cake.all
+  end
   
   def new
     @cake = Cake.new
@@ -9,7 +13,7 @@ class CakesController < ApplicationController
     @cake = Cake.new(cake_params)
     
     if @cake.save
-      redirect_to root_path 
+      redirect_to gallery_path 
     else
       render :new
     end

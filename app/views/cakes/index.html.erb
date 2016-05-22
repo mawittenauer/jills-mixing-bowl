@@ -1,0 +1,12 @@
+<% provide(:page, "gallery") %>
+<ul id="gallery">
+  <% @cakes.each do |cake| %>
+    <li>
+      <%= image_tag(cake.cake_url, class: "gallery-image") %>
+    </li>
+  <% end %>
+</ul>
+
+<% if logged_in? %>
+  <%= link_to "New Cake", new_cake_path, class: "button" %>
+<% end %>
