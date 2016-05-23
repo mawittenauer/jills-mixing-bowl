@@ -256,7 +256,7 @@ PAGE: CONTACT
   margin-bottom: 10px;
 }
 
-#gmap_canvas {
+.gmap_canvas {
   border: 10px solid #F9EBD7;
   box-sizing: border-box;
   width: 100%;
