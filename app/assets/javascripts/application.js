@@ -15,6 +15,11 @@
 //= require turbolinks
 //= require_tree .
 
+$(document).ready(function() {
+  mobileMenuToggle();
+  galleryModel();
+});
+
 function mobileMenuToggle() {
   $('#menu-toggle').on('click', function() {
     $('#main-nav').slideToggle();
@@ -32,9 +37,3 @@ function galleryModel() {
     $('#model-background').remove();
   });
 };
-
-$(document).ready(function() {
-  mobileMenuToggle();
-  galleryModel();
-});
-
