@@ -21,8 +21,8 @@ $(document).on('page:change', function() {
 });
 
 function mobileMenuToggle() {
-  $('#menu-toggle').on('click', function() {
-    $('#main-nav').slideToggle();
+  $('.menu-toggle').on('click', function() {
+    $(this).parent().next().slideToggle();
   });
 };
 

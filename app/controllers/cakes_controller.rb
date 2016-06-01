@@ -2,7 +2,8 @@ class CakesController < ApplicationController
   before_action :require_user, only: [:new, :create, :destroy]
   
   def index
-    @cakes = Cake.all
+    @categories = Category.all
+    @cakes = Category.find(params[:category_id]).cakes
   end
   
   def new
@@ -27,6 +28,6 @@ class CakesController < ApplicationController
   
   private
   def cake_params
-    params.require(:cake).permit(:cake)
+    params.require(:cake).permit(:cake, :category_id)
   end
 end

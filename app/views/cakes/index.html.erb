@@ -1,3 +1,16 @@
+<header>
+  <div class="header">
+    <a href="#" class="menu-toggle">Categories</a>
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <% @categories.each do |category| %>
+      <li><%= link_to "#{category.name}", gallery_path(category_id: category.id), class: "#{'active' if params[:category_id] == category.id.to_s}" %></li>
+      <% end %>
+    </ul>
+  </nav>
+</header>
+
 <% provide(:page, "gallery") %>
 <ul id="gallery">
   <% @cakes.each do |cake| %>

@@ -122,23 +122,23 @@ header {
   box-shadow: 1px 1px 1px #777;
 }
 
-#header {
+.header {
   margin-top: 20px;
   padding: 10px 0;
 }
 
-#main-nav {
+.main-nav {
   display: none;
 }
 
-#main-nav ul {
+.main-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
-#main-nav ul li a {
+.main-nav ul li a {
   text-align: center;
   display: inline-block;
   padding: 10px 0;
@@ -148,7 +148,7 @@ header {
   width: 100%;
 }
 
-#menu-toggle {
+.menu-toggle {
   margin-left: 10px;
   color: #35322E;
   font-family: 'Ultra';
@@ -284,32 +284,32 @@ PAGE: ORDER
   HEADER
   ******************/
   
-  #header {
+  .header {
     padding: 0;
   }
   
-  #menu-toggle {
+  .menu-toggle {
     display: none;
   }
   
-  #main-nav {
+  .main-nav {
     display: block !important;
     overflow: auto;
     text-align: center;
   }
   
-  #main-nav ul li {
+  .main-nav ul li {
     display: inline-block;
     width: 15%;
   }
   
-  #main-nav ul li a {
+  .main-nav ul li a {
     display: inline-block;
     border: none;
     padding: 10px 10px 10px 10px;
   }
   
-  #main-nav ul li a#active {
+  .main-nav ul li a.active {
     background-color: #FF9955;
     color: #35322E;
   }

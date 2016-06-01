@@ -1,15 +1,15 @@
 <h1>Jill&#39;s Mixing Bowl</h1>
 <header>
-  <div id="header">
-    <a href="#" id="menu-toggle">Menu</a>
+  <div class="header">
+    <a href="#" class="menu-toggle">Menu</a>
   </div>
-  <nav id="main-nav">
+  <nav class="main-nav">
     <ul>
-      <li><%= link_to "Home", root_path, id: "#{"active" if yield(:page) == "home" }" %></li>
-      <li><%= link_to "About", about_path, id: "#{"active" if yield(:page) == "about" }" %></li>
-      <li><%= link_to "Contact", contact_path, id: "#{"active" if yield(:page) == "contact" }" %></li>
-      <li><%= link_to "Gallery", gallery_path, id: "#{"active" if yield(:page) == "gallery" }" %></li>
-      <li><%= link_to "Order", order_path, id: "#{"active" if yield(:page) == "order" }" %></li>
+      <li><%= link_to "Home", root_path, class: "#{"active" if yield(:page) == "home" }" %></li>
+      <li><%= link_to "About", about_path, class: "#{"active" if yield(:page) == "about" }" %></li>
+      <li><%= link_to "Contact", contact_path, class: "#{"active" if yield(:page) == "contact" }" %></li>
+      <li><%= link_to "Gallery", gallery_path(category_id: 1), class: "#{"active" if yield(:page) == "gallery" }" %></li>
+      <li><%= link_to "Order", order_path, class: "#{"active" if yield(:page) == "order" }" %></li>
       
       <% if logged_in? %>
         <li><%= link_to "Sign Out", sign_out_path %></li>

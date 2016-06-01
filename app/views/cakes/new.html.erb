@@ -4,5 +4,8 @@
   <%= f.hidden_field :cake_cache %>
   <br>
   <br>
+  <%= f.select :category_id, Category.all.map { |n| [n.name, n.id]} %>
+  <br>
+  <br>
   <%= submit_tag "Save Cake", class: "button" %>
 <% end %>
